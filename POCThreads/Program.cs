@@ -10,14 +10,22 @@ namespace POCThreads
         {
             StreamWriter fileForTest = new StreamWriter(@"C:\Garbage\threads.txt", true);
 
-            Thread Y = new Thread(WriteY); // Kick off a new thread
-            Thread X = new Thread(WriteX); // Kick off a new thread            
+            Thread F = new Thread(WriteF); // Kick off a new thread
+            Thread C = new Thread(WriteC); // Kick off a new thread
+            Thread T = new Thread(WriteT); // Kick off a new thread            
+            Thread A = new Thread(WriteA); // Kick off a new thread            
+            Thread G = new Thread(WriteG); // Kick off a new thread            
 
-            X.Start(fileForTest);
-            Y.Start();                       
+            F.Start(fileForTest);
+            C.Start();
+            T.Start();
+            Thread.Sleep(1000);
+            A.Start();
+            Thread.Sleep(1000);
+            G.Start();
         }
 
-        static void WriteX(object print)
+        static void WriteF(object print)
         {
             StreamWriter fileForTest;
 
@@ -32,28 +40,54 @@ namespace POCThreads
             fileForTest.Close();            
         }
 
-        static void WriteY(object print)
+        static void WriteC(object print)
+        {
+            StreamWriter fileForTest;
+
+            fileForTest = (StreamWriter)print;
+            for (int i = 0; i < 50000; i++)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write("C");
+                Thread.Sleep(30);
+                //Console.ResetColor();
+            }
+        }
+
+        static void WriteT(object print)
         {
             StreamWriter fileForTest;            
 
             fileForTest = (StreamWriter)print;
             for (int i = 0; i < 50000; i++)
             {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("Y");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write("T");
                 Thread.Sleep(30);
-                Console.ResetColor();
+                //Console.ResetColor();
             }                 
         }
 
-        static void WriteZ()
+        static void WriteA()
         {
             for (int i = 0; i < 50000; i++)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.Write("Z");
-                Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("A");
+                Thread.Sleep(10);
+                //Console.ResetColor();
             }                    
+        }
+
+        static void WriteG()
+        {
+            for (int i = 0; i < 50000; i++)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("G");
+                Thread.Sleep(20);
+                //Console.ResetColor();
+            }
         }
 
         static void WriteL(object consoleColor)
