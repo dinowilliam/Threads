@@ -8,7 +8,7 @@ namespace POCThreads
     {
         static void Main(string[] args)
         {
-            StreamWriter fileForTest = new StreamWriter(@"D:\Garbage\threads.txt", true);
+            StreamWriter fileForTest = new StreamWriter(@"C:\Garbage\threads.txt", true);
 
             Thread Y = new Thread(WriteY); // Kick off a new thread
             Thread X = new Thread(WriteX); // Kick off a new thread            
