@@ -1,4 +1,4 @@
-﻿using POCThreads.Part1GettingStarted.POCS;
+﻿using POCThreads.Part1GettingStarted.IntroductionAndConcepts.POCS;
 using System;
 
 namespace POCThreads.Menu

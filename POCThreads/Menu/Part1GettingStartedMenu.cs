@@ -14,7 +14,7 @@ namespace POCThreads.Menu
             Console.WriteLine("|*********************************************************************************************************************|");
             Console.WriteLine("|                                                                                                                     |");
             Console.WriteLine("|                                        1 - Introduction And Concepts                                                |");
-            Console.WriteLine("|                                        2 -                                                                          |");
+            Console.WriteLine("|                                        2 - Join, Yield And Sleep                                                    |");
             Console.WriteLine("|                                        3 -                                                                          |");
             Console.WriteLine("|                                        4 -                                                                          |");
             Console.WriteLine("|                                        5 -                                                                          |");
@@ -43,13 +43,15 @@ namespace POCThreads.Menu
                 {
 
                     case 1:
-                        var Part1IntroductionAndConceptsMenu = new Part1IntroductionAndConceptsMenu();
-                        Part1IntroductionAndConceptsMenu.DrawMainScreen();
+                        var part1IntroductionAndConceptsMenu = new Part1IntroductionAndConceptsMenu();
+                        part1IntroductionAndConceptsMenu.DrawMainScreen();
 
                         DrawMainScreen();
                         break;
 
                     case 2:
+                        var part1IJoinYieldAndSleepMenu = new Part1IJoinYieldAndSleepMenu();
+                        part1IJoinYieldAndSleepMenu.DrawMainScreen();
 
                         DrawMainScreen();
                         break;

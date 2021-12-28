@@ -1,27 +1,27 @@
-﻿using POCThreads.Part1GettingStarted.Threads;
+﻿using POCThreads.Part1GettingStarted.JoinYieldAndSleep.Threads;
 using System;
 using System.Threading;
 
-namespace POCThreads.Part1GettingStarted.POCS
+namespace POCThreads.Part1GettingStarted.JoinYieldAndSleep.POCS
 {
-    public class PocThreadTest5
-    {
-        ThreadTest5 threadTest5;
+    public class PocThreadJoin {
 
-        public PocThreadTest5(){
-            threadTest5 = new ThreadTest5();
+        ThreadJoin threadJoin;
+
+        public PocThreadJoin(){
+            threadJoin = new ThreadJoin();
         }
 
-        public void StartThreadTest5() {
+        public void StartThreadJoin() {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("|******************************************************************************|");
-            Console.WriteLine("|                           Exercise about ThreadTest 5                        |");
+            Console.WriteLine("|                           Exercise about ThreadJoin                          |");
             Console.WriteLine("|******************************************************************************|");
             Console.WriteLine("\n \n \n Press on key to continue... ");
             Console.ReadLine();
 
-            threadTest5.Main();
+            threadJoin.Main();
 
             Console.ReadLine();            
             Console.ResetColor();

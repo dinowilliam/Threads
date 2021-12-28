@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading;
 
-namespace POCThreads.Part1GettingStarted.Threads
-{
+namespace POCThreads.Part1GettingStarted.JoinYieldAndSleep.Threads {
+
     public class ThreadYield {        
 
         public void Main() {

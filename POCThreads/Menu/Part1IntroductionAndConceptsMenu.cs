@@ -1,4 +1,4 @@
-﻿using POCThreads.Part1GettingStarted.POCS;
+﻿using POCThreads.Part1GettingStarted.IntroductionAndConcepts.POCS;
 using System;
 
 namespace POCThreads.Menu
@@ -20,9 +20,7 @@ namespace POCThreads.Menu
             Console.WriteLine("|                                        3 - Thread Test 3                                                            |");
             Console.WriteLine("|                                        4 - Thread Test 4                                                            |");
             Console.WriteLine("|                                        5 - Thread Test 5                                                            |");
-            Console.WriteLine("|                                        6 - Thread Safe                                                              |");
-            Console.WriteLine("|                                        7 - Thread Join                                                              |");
-            Console.WriteLine("|                                        8 - Thread Sleep                                                             |");
+            Console.WriteLine("|                                        6 - Thread Safe                                                              |");            
             Console.WriteLine("|                                        0 - Exit                                                                     |");
             Console.WriteLine("|*********************************************************************************************************************|");
             Console.WriteLine("| Choose one option to continue...                                                                                    |");
@@ -90,23 +88,7 @@ namespace POCThreads.Menu
 
                         DrawMainScreen();
                         break;
-
-                    case 7:
-
-                        var pocThreadJoin = new PocThreadJoin();
-                        pocThreadJoin.StartThreadJoin();
-
-                        DrawMainScreen();
-                        break;
-
-                    case 8:
-
-                        var pocThreadSleep = new PocThreadSleep();
-                        pocThreadSleep.StartThreadSleep();
-
-                        DrawMainScreen();
-                        break;
-
+              
                     case 0:                        
                         break;
 

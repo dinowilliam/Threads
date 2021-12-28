@@ -1,9 +1,8 @@
-﻿using POCThreads.Part1GettingStarted.Threads;
+﻿using POCThreads.Part1GettingStarted.IntroductionAndConcepts.Threads;
 using System;
-using System.Threading;
 
-namespace POCThreads.Part1GettingStarted.POCS
-{
+namespace POCThreads.Part1GettingStarted.IntroductionAndConcepts.POCS {
+
     public class PocThreadTest3
     {
         ThreadTest3 threadTest3;

@@ -1,5 +1,4 @@
 ﻿using POCThreads.Menu;
-using POCThreads.Part1GettingStarted.POCS;
 using System;
 
 namespace POCThreads

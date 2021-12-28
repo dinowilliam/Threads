@@ -1,27 +1,26 @@
-﻿using POCThreads.Part1GettingStarted.Threads;
+﻿using POCThreads.Part1GettingStarted.IntroductionAndConcepts.Threads;
 using System;
-using System.Threading;
 
-namespace POCThreads.Part1GettingStarted.POCS
-{
-    public class PocThreadSafe {
+namespace POCThreads.Part1GettingStarted.IntroductionAndConcepts.POCS {
 
-        ThreadSafe threadSafe;
+    public class PocThreadTest4
+    {
+        ThreadTest4 threadTest4;
 
-        public PocThreadSafe(){
-            threadSafe = new ThreadSafe();
+        public PocThreadTest4(){
+            threadTest4 = new ThreadTest4();
         }
 
-        public void StartThreadSafe() {
+        public void StartThreadTest4() {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("|******************************************************************************|");
-            Console.WriteLine("|                           Exercise about ThreadSafe                          |");
+            Console.WriteLine("|                           Exercise about ThreadTest 4                        |");
             Console.WriteLine("|******************************************************************************|");
             Console.WriteLine("\n \n \n Press on key to continue... ");
             Console.ReadLine();
 
-            threadSafe.Main();
+            threadTest4.Main();
 
             Console.ReadLine();            
             Console.ResetColor();

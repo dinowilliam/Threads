@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace POCThreads.Part1GettingStarted.Threads
-{
+namespace POCThreads.Part1GettingStarted.IntroductionAndConcepts.Threads {
     public class ThreadTest2 {        
 
         public void Main() {

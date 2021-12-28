@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace POCThreads.Part1GettingStarted.Threads {
+namespace POCThreads.Part1GettingStarted.IntroductionAndConcepts.Threads {
     public class ThreadTest5 {
 
         static bool done = false;  // Static fields are shared between all threads
