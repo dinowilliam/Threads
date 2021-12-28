@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Menu\Part1IntroductionAndConceptsMenu.cs" />
     <Compile Include="Menu\Part1GettingStartedMenu.cs" />
     <Compile Include="Menu\MainMenu.cs" />
     <Compile Include="Part 6 - I - DNAThread\DNAThread.cs" />
