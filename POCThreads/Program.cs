@@ -25,6 +25,7 @@ namespace POCThreads
             Console.WriteLine("|                                        3 - Thread Test 3                                                            |");
             Console.WriteLine("|                                        4 - Thread Test 4                                                            |");
             Console.WriteLine("|                                        5 - Thread Test 5                                                            |");
+            Console.WriteLine("|                                        6 - Thread Safe                                                              |");
             Console.WriteLine("|                                        0 - Exit                                                                     |");
             Console.WriteLine("|*********************************************************************************************************************|");
             Console.WriteLine("| Choose one option to continue...                                                                                    |");
@@ -78,6 +79,17 @@ namespace POCThreads
                         break;
 
                     case 5:
+
+                        var pocThreadTest5 = new PocThreadTest5();
+                        pocThreadTest5.StartThreadTest5();
+
+                        DrawMainScreen();
+                        break;
+
+                    case 6:
+
+                        var pocThreadSafe = new PocThreadSafe();
+                        pocThreadSafe.StartThreadSafe();
 
                         DrawMainScreen();
                         break;

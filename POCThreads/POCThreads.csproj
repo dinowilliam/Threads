@@ -43,10 +43,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DNAThread\DNAThread.cs" />
+    <Compile Include="Part 1 - Getting Started\POCS\PocThreadSafe.cs" />
+    <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest5.cs" />
     <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest4.cs" />
     <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest3.cs" />
     <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest2.cs" />
     <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest1.cs" />
+    <Compile Include="Part 1 - Getting Started\Threads\ThreadSafe.cs" />
+    <Compile Include="Part 1 - Getting Started\Threads\ThreadTest5.cs" />
     <Compile Include="Part 1 - Getting Started\Threads\ThreadTest4.cs" />
     <Compile Include="Part 1 - Getting Started\Threads\ThreadTest3.cs" />
     <Compile Include="Part 1 - Getting Started\Threads\ThreadTest2.cs" />
