@@ -42,30 +42,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DNAThread\DNAThread.cs" />
-    <Compile Include="Part 1 - Getting Started\POCS\PocThreadSleep.cs" />
-    <Compile Include="Part 1 - Getting Started\POCS\PocThreadJoin.cs" />
-    <Compile Include="Part 1 - Getting Started\POCS\PocThreadSafe.cs" />
-    <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest5.cs" />
-    <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest4.cs" />
-    <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest3.cs" />
-    <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest2.cs" />
-    <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest1.cs" />
-    <Compile Include="Part 1 - Getting Started\Threads\ThreadSleep.cs" />
-    <Compile Include="Part 1 - Getting Started\Threads\ThreadSafe.cs" />
-    <Compile Include="Part 1 - Getting Started\Threads\ThreadJoin.cs" />
-    <Compile Include="Part 1 - Getting Started\Threads\ThreadTest5.cs" />
-    <Compile Include="Part 1 - Getting Started\Threads\ThreadTest4.cs" />
-    <Compile Include="Part 1 - Getting Started\Threads\ThreadTest3.cs" />
-    <Compile Include="Part 1 - Getting Started\Threads\ThreadTest2.cs" />
-    <Compile Include="Part 1 - Getting Started\Threads\ThreadTest1.cs" />
+    <Compile Include="Menu\Part1GettingStartedMenu.cs" />
+    <Compile Include="Menu\MainMenu.cs" />
+    <Compile Include="Part 6 - I - DNAThread\DNAThread.cs" />
+    <Compile Include="Part 1 - I - Getting Started\POCS\PocThreadSleep.cs" />
+    <Compile Include="Part 1 - I - Getting Started\POCS\PocThreadJoin.cs" />
+    <Compile Include="Part 1 - I - Getting Started\POCS\PocThreadSafe.cs" />
+    <Compile Include="Part 1 - I - Getting Started\POCS\PocThreadTest5.cs" />
+    <Compile Include="Part 1 - I - Getting Started\POCS\PocThreadTest4.cs" />
+    <Compile Include="Part 1 - I - Getting Started\POCS\PocThreadTest3.cs" />
+    <Compile Include="Part 1 - I - Getting Started\POCS\PocThreadTest2.cs" />
+    <Compile Include="Part 1 - I - Getting Started\POCS\PocThreadTest1.cs" />
+    <Compile Include="Part 1 - I - Getting Started\Threads\ThreadYield.cs" />
+    <Compile Include="Part 1 - I - Getting Started\Threads\ThreadSleep.cs" />
+    <Compile Include="Part 1 - I - Getting Started\Threads\ThreadSafe.cs" />
+    <Compile Include="Part 1 - I - Getting Started\Threads\ThreadJoin.cs" />
+    <Compile Include="Part 1 - I - Getting Started\Threads\ThreadTest5.cs" />
+    <Compile Include="Part 1 - I - Getting Started\Threads\ThreadTest4.cs" />
+    <Compile Include="Part 1 - I - Getting Started\Threads\ThreadTest3.cs" />
+    <Compile Include="Part 1 - I - Getting Started\Threads\ThreadTest2.cs" />
+    <Compile Include="Part 1 - I - Getting Started\Threads\ThreadTest1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Part 1 - II - Creating and Starting Threads\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
