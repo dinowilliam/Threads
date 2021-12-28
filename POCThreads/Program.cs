@@ -55,8 +55,8 @@ namespace POCThreads
 
                     case 2:
 
-                        //var pocMonitorObject = new PocMonitorObject();
-                        //pocMonitorObject.StartMonitorObjectTest();
+                        var pocThreadTest2 = new PocThreadTest2();
+                        pocThreadTest2.StartThreadTest2();
 
                         DrawMainScreen();
                         break;

@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DNAThread\DNAThread.cs" />
+    <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest2.cs" />
     <Compile Include="Part 1 - Getting Started\POCS\PocThreadTest1.cs" />
+    <Compile Include="Part 1 - Getting Started\Threads\ThreadTest2.cs" />
     <Compile Include="Part 1 - Getting Started\Threads\ThreadTest1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
