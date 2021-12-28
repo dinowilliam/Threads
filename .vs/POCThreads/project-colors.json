@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bda437fb-21f7-410d-bc71-0e3391a6982a": {
+      "ProjectGuid": "bda437fb-21f7-410d-bc71-0e3391a6982a",
+      "DisplayName": "POCThreads",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

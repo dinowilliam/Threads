@@ -1,123 +1,95 @@
-﻿using System;
-using System.IO;
-using System.Threading;
+﻿using POCThreads.Part1GettingStarted.POCS;
+using System;
 
 namespace POCThreads
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            StreamWriter fileForTest = new StreamWriter(@"C:\Garbage\threads.txt", true);
-
-            Thread F = new Thread(WriteF); // Kick off a new thread
-            Thread C = new Thread(WriteC); // Kick off a new thread
-            Thread T = new Thread(WriteT); // Kick off a new thread            
-            Thread A = new Thread(WriteA); // Kick off a new thread            
-            Thread G = new Thread(WriteG); // Kick off a new thread            
-
-            F.Start(fileForTest);
-            C.Start();
-            T.Start();
-            Thread.Sleep(1000);
-            A.Start();
-            Thread.Sleep(1000);
-            G.Start();
+        static void Main(string[] args) {
+            DrawMainScreen();
         }
 
-        static void WriteF(object print)
+        public static void DrawMainScreen()
         {
-            StreamWriter fileForTest;
 
-            fileForTest = (StreamWriter)print;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("|*********************************************************************************************************************|");
+            Console.WriteLine("|                                                  dinowilliam.com                                                    |");
+            Console.WriteLine("|*********************************************************************************************************************|");
+            Console.WriteLine("|                                               Exercises from Threads                                                |");
+            Console.WriteLine("|*********************************************************************************************************************|");
+            Console.WriteLine("|                                Getting Started                                                                      |");
+            Console.WriteLine("|                                        1 - Thread Test 1                                                            |");
+            Console.WriteLine("|                                        2 - Thread Test 2                                                            |");
+            Console.WriteLine("|                                        3 - Thread Test 3                                                            |");
+            Console.WriteLine("|                                        4 - Thread Test 4                                                            |");
+            Console.WriteLine("|                                        5 - Thread Test 5                                                            |");
+            Console.WriteLine("|                                        0 - Exit                                                                     |");
+            Console.WriteLine("|*********************************************************************************************************************|");
+            Console.WriteLine("| Choose one option to continue...                                                                                    |");
+            Console.WriteLine("|*********************************************************************************************************************|");
 
-            for (int i = 0; i < 50000; i++)
-            {                
-                fileForTest.WriteLine(" Thread WriteX ");                
-                Thread.Sleep(50);                
-            }
+            var option = Console.ReadLine();
 
-            fileForTest.Close();            
+            ExecuteTheOption(option);
         }
 
-        static void WriteC(object print)
+        public static void ExecuteTheOption(string option)
         {
-            StreamWriter fileForTest;
 
-            fileForTest = (StreamWriter)print;
-            for (int i = 0; i < 50000; i++)
+            if (!String.IsNullOrWhiteSpace(option))
             {
-                Console.ForegroundColor = ConsoleColor.Blue;
-                Console.Write("C");
-                Thread.Sleep(30);
-                //Console.ResetColor();
-            }
-        }
 
-        static void WriteT(object print)
-        {
-            StreamWriter fileForTest;            
+                int value = Int32.Parse(option);
 
-            fileForTest = (StreamWriter)print;
-            for (int i = 0; i < 50000; i++)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.Write("T");
-                Thread.Sleep(30);
-                //Console.ResetColor();
-            }                 
-        }
-
-        static void WriteA()
-        {
-            for (int i = 0; i < 50000; i++)
-            {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write("A");
-                Thread.Sleep(10);
-                //Console.ResetColor();
-            }                    
-        }
-
-        static void WriteG()
-        {
-            for (int i = 0; i < 50000; i++)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("G");
-                Thread.Sleep(20);
-                //Console.ResetColor();
-            }
-        }
-
-        static void WriteL(object consoleColor)
-        {
-            var thread = new System.Threading.Thread(new System.Threading.ThreadStart(() =>
-            {
-                for (int i = 0; i < 50; i++)
+                switch (value)
                 {
-                    try
-                    {
-                        Console.ForegroundColor = (ConsoleColor) consoleColor;
 
-                        if(i >= 25) throw new Exception();
+                    case 1:
+                        var pocThreadTest1 = new PocThreadTest1();
+                        pocThreadTest1.StartThreadTest1();
 
-                        Console.Write("Thread L");
-                        Thread.Sleep(30);
-                        Console.ResetColor();
-                      
-                    }
-                    catch(Exception ex)
-                    {
-                                               
-                    }                    
+                        DrawMainScreen();
+                        break;
+
+                    case 2:
+
+                        //var pocMonitorObject = new PocMonitorObject();
+                        //pocMonitorObject.StartMonitorObjectTest();
+
+                        DrawMainScreen();
+                        break;
+
+                    case 3:
+
+                        DrawMainScreen();
+                        break;
+
+                    case 4:
+
+                        DrawMainScreen();
+                        break;
+
+                    case 5:
+
+                        DrawMainScreen();
+                        break;
+
+                    case 0:
+                        Environment.Exit(0);
+                        break;
+
+                    default:
+                        DrawMainScreen();
+                        break;
                 }
-
-            }));
-
-            //thread.IsBackground = true;
-            thread.Name = "Thread L";
-            thread.Start();
+            }
+            else
+            {
+                DrawMainScreen();
+            }
         }
+
     }
 }
