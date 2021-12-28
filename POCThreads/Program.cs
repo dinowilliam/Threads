@@ -63,6 +63,9 @@ namespace POCThreads
 
                     case 3:
 
+                        var pocThreadTest3 = new PocThreadTest3();
+                        pocThreadTest3.StartThreadTest3();
+
                         DrawMainScreen();
                         break;
 
