@@ -71,6 +71,9 @@ namespace POCThreads
 
                     case 4:
 
+                        var pocThreadTest4 = new PocThreadTest4();
+                        pocThreadTest4.StartThreadTest4();
+
                         DrawMainScreen();
                         break;
 
