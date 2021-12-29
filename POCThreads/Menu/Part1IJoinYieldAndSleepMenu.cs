@@ -58,8 +58,8 @@ namespace POCThreads.Menu
 
                     case 3:
 
-                        //var pocThreadYield = new PocThreadYield();
-                        //pocThreadYield.StartThreadYield();
+                        var pocThreadYield = new PocThreadYield();
+                        pocThreadYield.StartThreadYield();
 
                         DrawMainScreen();
                         break;

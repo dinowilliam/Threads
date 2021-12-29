@@ -46,7 +46,9 @@
     <Compile Include="Menu\Part1IJoinYieldAndSleepMenu.cs" />
     <Compile Include="Menu\Part1GettingStartedMenu.cs" />
     <Compile Include="Menu\MainMenu.cs" />
-    <Compile Include="Part 6 - I - DNAThread\DNAThread.cs" />
+    <Compile Include="Part 1 - I - Getting Started\JoinYieldAndSleep\POCS\PocThreadYield.cs" />
+    <Compile Include="Part 6 - I - DNAThread\POCS\PocDNAThread.cs" />
+    <Compile Include="Part 6 - I - DNAThread\Threads\DNAThread.cs" />
     <Compile Include="Part 1 - I - Getting Started\JoinYieldAndSleep\POCS\PocThreadSleep.cs" />
     <Compile Include="Part 1 - I - Getting Started\JoinYieldAndSleep\POCS\PocThreadJoin.cs" />
     <Compile Include="Part 1 - I - Getting Started\IntroductionAndConcepts\POCS\PocThreadSafe.cs" />

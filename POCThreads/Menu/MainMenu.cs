@@ -1,4 +1,5 @@
 ﻿using POCThreads.Part1GettingStarted.IntroductionAndConcepts.POCS;
+using POCThreads.Part6DNAThread.POCS;
 using System;
 
 namespace POCThreads.Menu
@@ -22,6 +23,7 @@ namespace POCThreads.Menu
             Console.WriteLine("|                                        6 -                                                                          |");
             Console.WriteLine("|                                        7 -                                                                          |");
             Console.WriteLine("|                                        8 -                                                                          |");
+            Console.WriteLine("|                                        99 - Part 6 - DNA Thread                                                     |");
             Console.WriteLine("|                                        0 - Exit                                                                     |");
             Console.WriteLine("|*********************************************************************************************************************|");
             Console.WriteLine("| Choose one option to continue...                                                                                    |");
@@ -81,6 +83,14 @@ namespace POCThreads.Menu
                         break;
 
                     case 8:
+
+                        DrawMainScreen();
+                        break;
+
+                    case 99:
+
+                        var pocDNAThread = new PocDNAThread();
+                        pocDNAThread.StartDNAThread();
 
                         DrawMainScreen();
                         break;

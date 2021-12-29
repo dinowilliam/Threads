@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
-namespace POCThreads.DNAThread
+namespace POCThreads.Part6DNAThread.Threads
 {
     public class DNAThread
     {
-        public DNAThread() {
+        public void Main() {
 
             StreamWriter fileForTest = new StreamWriter(@"C:\Garbage\threads.txt", true);
 
