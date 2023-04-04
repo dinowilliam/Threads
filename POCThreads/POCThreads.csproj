@@ -73,6 +73,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Part 1 - I - Getting Started\CreatingAndStartingTreads\POCS\" />
+    <Folder Include="Part 1 - I - Getting Started\CreatingAndStartingTreads\Threads\" />
     <Folder Include="Part 1 - II - Creating and Starting Threads\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
